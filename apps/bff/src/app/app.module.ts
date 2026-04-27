@@ -4,11 +4,13 @@ import { CONFIGURATION, TConfiguration } from '../configuration';
 import { ConfigModule } from '@nestjs/config';
 import { LoggerMiddleware } from '@common/middlewares/logger.middleware';
 import { MiddlewareConsumer, Module } from '@nestjs/common';
+import { APP_INTERCEPTOR } from '@nestjs/core';
+import { ExceptionInterceptor } from '@common/interceptors/exception.interceptor';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true, load: [() => CONFIGURATION] })],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, { provide: APP_INTERCEPTOR, useClass: ExceptionInterceptor }],
 })
 export class AppModule {
   static CONFIGURATION: TConfiguration = CONFIGURATION;
