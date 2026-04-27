@@ -5,7 +5,8 @@ module.exports = {
   output: {
     path: join(__dirname, '../../dist/apps/invoice'),
     ...(process.env.NODE_ENV !== 'production' && {
-      devtoolModuleFilenameTemplate: '[absolute-resource-path]',
+      devtoolModuleFilenameTemplate: (info) =>
+        `file:///${info.absoluteResourcePath.replace(/\\/g, '/')}`,
     }),
   },
   plugins: [

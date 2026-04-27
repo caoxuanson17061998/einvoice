@@ -4,17 +4,19 @@
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "module": "Node16",
+    "moduleResolution": "node16",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es2015",
-    "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@common/configuration/*": ["libs/configuration/src/lib/*"],
+      "@common/constants": ["/libs/constants/src/index.ts"],
       "@common/constants/*": ["libs/constants/src/lib/*"]
     }
   },

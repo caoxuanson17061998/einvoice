@@ -54,7 +54,8 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "bff:build:development"
+          "buildTarget": "bff:build:development",
+          "port": 9231
         },
         "production": {
           "buildTarget": "bff:build:production"
