@@ -7,7 +7,7 @@ import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { ExceptionInterceptor } from '@common/interceptors/exception.interceptor';
 import { ClientsModule } from '@nestjs/microservices';
-import { TcpProvider, TCP_SERVICES } from '@common/configuration/tcp.config';
+import { TCP_SERVICES, TcpProvider } from '@common/configuration/tcp.config';
 
 @Module({
   imports: [
