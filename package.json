@@ -31,6 +31,7 @@
     "@nestjs/testing": "^11.0.0",
     "@nx/eslint": "21.4.0",
     "@nx/eslint-plugin": "21.4.0",
+    "@nestjs/microservices": "^11.1.6",
     "@nx/jest": "21.4.0",
     "@nx/js": "21.4.0",
     "@nx/nest": "21.4.0",
