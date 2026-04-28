@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strictPropertyInitialization": false,
     "paths": {
       "@common/configuration/*": ["libs/configuration/src/lib/*"],
       "@common/constants/*": ["libs/constants/src/lib/*"],
