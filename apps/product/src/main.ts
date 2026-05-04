@@ -15,7 +15,7 @@ async function bootstrap() {
     transport: Transport.TCP,
     options: {
       host: AppModule.CONFIGURATION?.TCP_SERV?.TCP_PRODUCT_SERVICE?.options?.host ?? 'localhost',
-      port: AppModule.CONFIGURATION?.TCP_SERV?.TCP_PRODUCT_SERVICE?.options?.port ?? 3001,
+      port: AppModule.CONFIGURATION?.TCP_SERV?.TCP_PRODUCT_SERVICE?.options?.port ?? 3202,
     },
   });
 
