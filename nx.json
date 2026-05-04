@@ -15,7 +15,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "69eece1f2974d6d155744843",
+  "nxCloudId": "69f8412e01c9ca79b36844ff",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -28,18 +28,7 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      },
-      "exclude": ["apps/invoice-e2e/**/*"]
-    }
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" }, "exclude": ["apps/invoice-e2e/**/*"] }
   ]
 }
